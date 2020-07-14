@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="static/style.css">
+<head>
+	<title>home</title>
+</head>
+<body>
+<header>
+	<img src="{{ url_for('static', filename='photo/logo.gif') }}" width="240" height="100" />
+</header>
+<h1 id="ct">Welcome to Message Spam Detector</h1>
+<h2>Enter your text</h2>
+<form action="{{ url_for('prediction')}}" method="post">
+        <label for="text">text </label>
+        <textarea name="text" rows="10" cols="60"></textarea>
+	</br></br>	
+	<input type="submit" name="predict" value="predict" id="ib">
+</form>
+
+</br></br>
+<footer>
+ 	&copy: nothing enjoy
+</footer> 
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="static/style.css">
+<head>
+	<title>predict</title>
+</head>
+<body>
+<header>
+	<img src="{{ url_for('static', filename='photo/logo.gif') }}" width="240" height="100" />
+       
+</header>
+        {% if prediction == "spam"%}
+	<h2 style="color:red;">Spam</h2>
+	{% elif prediction == "ham"%}
+	<h2 style="color:blue;">Not a Spam </h2>
+	{% endif %}
+
+
+</br></br>
+<footer>
+ 	&copy: nothing enjoy
+</footer> 
+</body>
+</html>

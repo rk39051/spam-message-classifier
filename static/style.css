@@ -1,0 +1,23 @@
+header
+{
+	background-color: darkblue;
+}
+footer
+{
+	background-color: darkgrey;
+    
+}
+#ib
+{
+	width: 100px;
+	background-color: #abcddd;
+}
+#ct
+{
+	text-align: center;
+}
+#checkbox
+{
+	width: 20px;
+	height: 20px;
+}
